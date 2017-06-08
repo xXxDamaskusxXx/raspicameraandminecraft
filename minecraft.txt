@@ -1,0 +1,24 @@
+from mcpi.minecraft import Minecraft
+import picamera
+from time import sleep
+mc = Minecraft.create()
+d=1
+while True:
+    x, y, z = mc.player.getPos()  
+    input = raw_input("algo")
+    if input == 'p':
+        for q in range (0,30):
+            n=1
+            mc.setBlock(x, (y-1), z, 35, [n])
+            n= n+1
+            if n== 16:
+                n=1
+            sleep(0.5)
+    if x==-41 and y==8 and z== -105:
+        camera.awb_mode= 'incandescent'
+        camera.capture('efecto.jpg')
+    if input=='mimbre':
+        mc.setBlocks(0,0,0,20,20,20,d,1)
+        d=d+1
+        if d==100:
+            d=1
