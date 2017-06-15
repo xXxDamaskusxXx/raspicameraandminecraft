@@ -37,6 +37,7 @@ while True:
         mc.player.setPos(x, y, z-20)
 
     if input == 'Tower':
+        x, y, z = mc.player.getPos()  
         mc.setBlocks(x+11, y+2, z+9, x+22, y+12, z+16, 42)
         mc.setBlocks(x+12, y+3, z+10, x+21, y+11, z+15, 0)
         mc.setBlocks(x+10, y+2, z+8, x+22, y+2, z+16, 41)
@@ -64,5 +65,3 @@ while True:
         mc.setBlock(x+22, y+13, z+11, 42)
         mc.setBlock(x+11, y+13, z+14, 42)
         mc.setBlock(x+22, y+13, z+14, 42)
-   if input == 'River':
-        mc.setBlocks(x+11, y+1, z+9, x+22, y+1, z+16, 42)
